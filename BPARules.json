@@ -648,7 +648,7 @@
     "Category": "Formatting",
     "Severity": 2,
     "Scope": "Measure",
-    "Expression": "DataType != DataType.String and DataType != DataType.Boolean and not FormatString.Contains(\"$\") and not FormatString.Contains(\"%\") and not (FormatString = \"#,0\" or FormatString = \"#,0.0\")",
+    "Expression": "DataType != DataType.String and DataType != DataType.Boolean and DataType != DataType.DateTime and not FormatString.Contains(\"$\") and not FormatString.Contains(\"%\") and not (FormatString = \"#,0\" or FormatString = \"#,0.0\")",
     "FixExpression": "FormatString = \"#,0\"",
     "CompatibilityLevel": 1200
   },
