@@ -1,7 +1,7 @@
 ## Differences compared to MS BPA rules
 
 ```bash
-diff --git a/BPARules.json b/microsoft/BestPracticeRules/BPARules.json
+git diff --no-index BPARules.json microsoft/BestPracticeRules/BPARules.json
 ```
 
 ```git
