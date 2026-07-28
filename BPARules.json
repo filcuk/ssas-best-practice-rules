@@ -570,6 +570,17 @@
     "CompatibilityLevel": 1200
   },
   {
+    "ID": "COLUMN_NAMES_MUST_NOT_CONTAIN_UNDERSCORES",
+    "Name": "[Naming Conventions] Column names must not contain underscores",
+    "Category": "Naming Conventions",
+    "Description": "Column names should not contain underscores. Prefer spaces for readability (e.g. \"Customer Name\" instead of \"Customer_Name\").",
+    "Severity": 1,
+    "Scope": "DataColumn, CalculatedColumn, CalculatedTableColumn",
+    "Expression": "Name.Contains(\"_\")",
+    "FixExpression": "Name = it.Name.Replace(\"_\", \" \").Replace(\"  \", \" \").Replace(\"  \", \" \").Replace(\"  \", \" \").Replace(\"  \", \" \").Trim()",
+    "CompatibilityLevel": 1200
+  },
+  {
     "ID": "FORMAT_FLAG_COLUMNS_AS_YES/NO_VALUE_STRINGS",
     "Name": "[Formatting] Format flag columns as Yes/No value strings",
     "Category": "Formatting",
